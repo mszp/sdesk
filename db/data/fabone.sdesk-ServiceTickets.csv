@@ -1,0 +1,2 @@
+Code;Category;Subcategory;Title;Product;Description;Priority;Requester;DueDate;CustomerType;RemoteSessionID;CreatedBy;CreatedDate;UpdatedBy;UpdatedDate;Status;CommunicationChannel;Language;Attachments;AttendedBy;AttendedDate
+1;SAP;Purchasing-AP;Error in PR;SAP B1;Error recorded while generating PR;High;MOHAMMAD;2021-09-20;On-Premise;12345;MOHAMMAD;2021-09-19;;;Pending;Fabone;English;;MOHAMMAD;2021-09-19
