@@ -54,10 +54,10 @@ entity ServiceModule {
 }
 
 entity CustomFields {
-    key Code:sCode;
-        FieldName:SString;
-        DataType:SString;
-        DataSize:Decimal;
-        ServiceModule:SString;
+    key Code          : sCode;
+        FieldName     : SString;
+        DataType      : SString;
+        DataSize      : Decimal;
+        ServiceModule : SString;
 
 }
