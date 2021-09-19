@@ -11,17 +11,18 @@ type sSingle : String(1);
 
 entity ServiceTickets {
     key Code                 : sCode;
+        ServiceModule        : SString;
         Category             : SString;
         Subcategory          : SString;
         Title                : SString;
         Product              : SString;
         Description          : LString;
         Priority             : SString;
-        Requester            : sCode;
+        Requester            : SString;
         DueDate              : sCode;
         CustomerType         : SString;
         RemoteSessionID      : SString;
-        CreatedBy            : sCode;
+        CreatedBy            : SString;
         CreatedDate          : sCode;
         UpdatedBy            : sCode;
         UpdatedDate          : sCode;
@@ -29,7 +30,34 @@ entity ServiceTickets {
         CommunicationChannel : SString; // (Phone/Twitter/Email/Facebook/Web/Chat/Forums)
         Language             : SString;
         Attachments          : SString;
-        AttendedBy           : sCode;
+        AttendedBy           : SString;
         AttendedDate         : sCode;
+
+}
+
+entity ServiceCategory {
+    key Code          : sCode;
+        Category      : SString;
+        ServiceModule : SString;
+}
+
+entity ServiceCategoryAgent {
+    key Code       : sCode;
+        Category   : SString;
+        AgentID    : SString;
+        AgentEmail : SString;
+}
+
+entity ServiceModule {
+    key Code          : sCode;
+        ServiceModule : SString;
+}
+
+entity CustomFields {
+    key Code:sCode;
+        FieldName:SString;
+        DataType:SString;
+        DataSize:Decimal;
+        ServiceModule:SString;
 
 }
